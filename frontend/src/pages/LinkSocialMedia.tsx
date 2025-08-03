@@ -425,7 +425,7 @@ const LinkSocialMedia: React.FC = () => {
             const token = await getToken();
             const username = instagramUsername.trim();
             if (!username) {
-                setError("Please enter an Instagram username.");
+                setError("Please enter an Instagram post link.");
                 setLoadingPosts(false);
                 return;
             }
@@ -517,7 +517,7 @@ const LinkSocialMedia: React.FC = () => {
             const token = await getToken();
             const profileUrl = facebookProfileUrl.trim();
             if (!profileUrl) {
-                setFBError("Please enter a Facebook profile URL.");
+                setFBError("Please enter a Facebook post URL.");
                 setFBLoadingPosts(false);
                 return;
             }
@@ -821,7 +821,7 @@ const LinkSocialMedia: React.FC = () => {
                                                     <input
                                                         type="text"
                                                         className="form-control w-64 mb-2"
-                                                        placeholder="Enter Instagram username"
+                                                        placeholder="Enter Instagram post link"
                                                         value={instagramUsername}
                                                         onChange={e => setInstagramUsername(e.target.value)}
                                                     />
@@ -909,7 +909,7 @@ const LinkSocialMedia: React.FC = () => {
                                                     <input
                                                         type="text"
                                                         className="form-control w-64 mb-2"
-                                                        placeholder="Enter Facebook profile URL"
+                                                        placeholder="Enter Facebook posturl URL"
                                                         value={facebookProfileUrl}
                                                         onChange={e => setFacebookProfileUrl(e.target.value)}
                                                     />
